@@ -1,0 +1,75 @@
+{
+  "name": "community-website",
+  "version": "1.0.0",
+  "description": "HITK Community Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "lint": "eslint . --format table",
+    "lint:fix": "eslint . --fix --format table",
+    "test": "mocha tests --recursive --timeout 15000 --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HITK-TECH-Community/Community-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HITK-TECH-Community/Community-Website/issues"
+  },
+  "homepage": "https://github.com/HITK-TECH-Community/Community-Website#readme",
+  "dependencies": {
+    "argon2": "^0.27.1",
+    "await-to-js": "^2.1.1",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "colors": "^1.4.0",
+    "config": "^3.3.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "joi": "^17.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mocha": "^8.3.2",
+    "mongoose": "^5.11.8",
+    "nanoid": "^3.1.20",
+    "nodemailer": "^6.5.0",
+    "response-time": "^2.3.2",
+    "url-exists": "^1.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint . --fix --format table "
+    ]
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "mocha": "^8.3.2",
+    "nodemon": "^2.0.6",
+    "prettier": "2.2.1"
+  }
+}

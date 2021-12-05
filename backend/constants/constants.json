@@ -1,0 +1,16 @@
+{
+  "ERRORS": {
+    "AUTH": "Authentication Error",
+    "INPUT": "Invalid or malformed request",
+    "DATABASE": "Database Error",
+    "CRITICAL": "Critical Error",
+    "WARNING": "Warning",
+    "USER": "User ",
+    "UNEXPECTED": "Unexpected Error"
+  },
+  "PAGINATION_LIMIT": {
+    "GET_ADMINS": 3,
+    "GET_BROADCASTS": 5
+  },
+  "JWT_RESET_PASSWORD_EXPIRES_IN": "1h"
+}
